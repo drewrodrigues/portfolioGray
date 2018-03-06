@@ -1,0 +1,253 @@
+/**********************************
+Variables
+**********************************/
+$primary-color: #222;
+$secondary-color: #eee;
+$primary-off-color: #666;
+$primary-red: #DC3522;
+$primary-red-off: #ED4633;
+
+/**********************************
+Base Styles
+**********************************/
+#about-me, #projects, #contact, #skills {
+  padding: 50px 0;
+}
+
+#projects, #skills {
+  img {
+    width: 100%;
+  }
+}
+
+#features, #slider, #tech-logos {
+  margin-top: 50px;
+}
+
+section {
+  > .col-md-3, .col-md-4, .col-md-2, .row {
+    margin-bottom: 50px;
+  }
+}
+
+.glyphicon {
+  font-size: 30px;
+}
+
+/**********************************
+Special Styles
+**********************************/
+
+.default-button {
+  background: $primary-color;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  letter-spacing: 3px;
+  font-weight: 300;
+  &:hover {
+    background: $primary-off-color;
+  }
+}
+
+.secondary-button {
+  background: $primary-red;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  letter-spacing: 3px;
+  font-weight: 300;
+  &:hover {
+    background: $primary-red-off;
+  }
+}
+
+/**********************************
+Typography
+**********************************/
+html {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h2 {
+  letter-spacing: 10px;
+  font-size: 24px;
+  color: $primary-color;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 50px;
+  display: inline-block;
+  border: 1px solid $primary-color;
+  padding: 10px;
+}
+
+h5 {
+  letter-spacing: 3px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+
+/**********************************
+Navigation & Main
+**********************************/
+#main {
+  background: url('../images/intro-bkg.jpg');
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  min-height: 500px;
+  color: $primary-color;
+  text-align: center;
+  .navbar {
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    a {
+      color: $primary-color;
+      font-size: 10px;
+      &:hover {
+        color: $primary-red;
+        background: none;
+      }
+    }
+  }
+}
+
+#intro-name {
+  text-transform: uppercase;
+  font-size: 80px;
+  border: 3px solid $primary-color;
+  padding: 20px;
+  display: inline-block;
+}
+
+#intro-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#nav {
+  background: none;
+}
+
+#logo {
+  padding: 10px 10px;
+  display: block;
+  font-weight: bold;
+}
+
+/**********************************
+About
+**********************************/
+#about-me {
+  h4 {
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  > .col-md-3 {
+    margin-bottom: 50px;
+  }
+
+  p {
+    line-height: 2;
+    text-align: justify;;
+    margin-bottom: 50px;
+  }
+}
+
+/**********************************
+Projects
+**********************************/
+#projects {
+  background: $secondary-color;
+}
+
+#projects p {
+  letter-spacing: 3px;
+}
+
+ul {
+  margin-left: none; padding-left: 0;
+}
+
+.stack {
+  li {
+    display: block;
+    margin-bottom: -1px;
+    padding: 5px;
+    color: $primary-red;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+  }
+}
+
+#slider-filter {
+  text-align: center;
+  li {
+    display: inline-block;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+    background: $primary-red;
+  }
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}
+
+/**********************************
+Skills
+**********************************/
+
+/**********************************
+Contact
+**********************************/
+#contact, #projects {
+  background-image: url('../images/shattered.png');
+}
+
+.menu-open {
+	display: none !important;
+}
+
+/**********************************
+Media Qs
+**********************************/
+@media screen and (min-width: 790px) {
+	.dropdown {
+		display: block !important;
+	}
+	
+	.menu-open {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	.dropdown {
+		text-align: center;
+		display: none;
+		width: 100%;
+	}
+
+	.menu-open {
+		display: block !important;
+		float: right;
+		padding: 10px;
+		cursor: pointer;
+	}
+}

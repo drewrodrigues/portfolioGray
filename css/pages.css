@@ -1,0 +1,200 @@
+/**********************************
+Variables
+**********************************/
+/**********************************
+Base Styles
+**********************************/
+#about-me, #projects, #contact, #skills {
+  padding: 50px 0; }
+
+#projects img, #skills img {
+  width: 100%; }
+
+#features, #slider, #tech-logos {
+  margin-top: 50px; }
+
+section > .col-md-3, section .col-md-4, section .col-md-2, section .row {
+  margin-bottom: 50px; }
+
+.glyphicon {
+  font-size: 30px; }
+
+/**********************************
+Special Styles
+**********************************/
+.default-button {
+  background: #222;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  letter-spacing: 3px;
+  font-weight: 300; }
+  .default-button:hover {
+    background: #666; }
+
+.secondary-button {
+  background: #DC3522;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  letter-spacing: 3px;
+  font-weight: 300; }
+  .secondary-button:hover {
+    background: #ED4633; }
+
+/**********************************
+Typography
+**********************************/
+html {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+h2 {
+  letter-spacing: 10px;
+  font-size: 24px;
+  color: #222;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 50px;
+  display: inline-block;
+  border: 1px solid #222;
+  padding: 10px; }
+
+h5 {
+  letter-spacing: 3px;
+  font-weight: 300;
+  margin-bottom: 50px; }
+
+/**********************************
+Navigation & Main
+**********************************/
+#main {
+  background: url("../images/intro-bkg.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  min-height: 500px;
+  color: #222;
+  text-align: center; }
+  #main .navbar {
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-transform: uppercase; }
+    #main .navbar a {
+      color: #222;
+      font-size: 10px; }
+      #main .navbar a:hover {
+        color: #DC3522;
+        background: none; }
+
+#intro-name {
+  text-transform: uppercase;
+  font-size: 80px;
+  border: 3px solid #222;
+  padding: 20px;
+  display: inline-block; }
+
+#intro-title {
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+#nav {
+  background: none; }
+
+#logo {
+  padding: 10px 10px;
+  display: block;
+  font-weight: bold; }
+
+/**********************************
+About
+**********************************/
+#about-me h4 {
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase; }
+#about-me > .col-md-3 {
+  margin-bottom: 50px; }
+#about-me p {
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 50px; }
+
+/**********************************
+Projects
+**********************************/
+#projects {
+  background: #eee; }
+
+#projects p {
+  letter-spacing: 3px; }
+
+ul {
+  margin-left: none;
+  padding-left: 0; }
+
+.stack li {
+  display: block;
+  margin-bottom: -1px;
+  padding: 5px;
+  color: #DC3522;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 10px; }
+
+#slider-filter {
+  text-align: center; }
+  #slider-filter li {
+    display: inline-block;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+    background: #DC3522; }
+  #slider-filter a {
+    text-decoration: none;
+    color: #eee; }
+
+/**********************************
+Skills
+**********************************/
+/**********************************
+Contact
+**********************************/
+#contact, #projects {
+  background-image: url("../images/shattered.png"); }
+
+.menu-open {
+  display: none !important; }
+
+/**********************************
+Media Qs
+**********************************/
+@media screen and (min-width: 790px) {
+  .dropdown {
+    display: block !important; }
+
+  .menu-open {
+    display: none; } }
+@media screen and (max-width: 790px) {
+  .dropdown {
+    text-align: center;
+    display: none;
+    width: 100%; }
+
+  .menu-open {
+    display: block !important;
+    float: right;
+    padding: 10px;
+    cursor: pointer; } }
+
+/*# sourceMappingURL=pages.css.map */
